@@ -1,4 +1,67 @@
-body {
-  background: beige;
-  color: grey;
+.width__wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header {
+  background: top / cover no-repeat url('../img/bg-header@2x.jpg');
+
+  .header__wrapper {
+    padding: 54px 0 0 0;
+    background: linear-gradient(rgba(52,142,158,66%) 0%, rgba(46,100,110,1) 100%);
+  }
+
+  .header__navbar {
+    margin: 0 0 151px 0;
+  }
+
+  .logo {
+
+    img {
+      width: 51px;
+      height: 51px;
+    }
+
+    .logo__wrapper {
+      margin: 0 0 0 8px;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  span {
+    text-align: center;
+  }
+
+  .header__about {
+    position: relative;
+
+    .header__about__text {
+      position: absolute;
+      width: 623px;
+      height: 243px;
+    }
+  }
+}
+
+.services {
+  background: #FFFFFF;
+}
+
+.projects {
+  background: #E2E6E6;
+}
+
+.life {
+  background: #FFFFFF;
+}
+
+.footer {
+  background: #000000;
 }

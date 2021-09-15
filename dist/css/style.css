@@ -1,4 +1,57 @@
-body {
-  background: beige;
-  color: grey;
+.width__wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header {
+  background: top/cover no-repeat url("../img/bg-header@2x.jpg");
+}
+.header .header__wrapper {
+  padding: 54px 0 0 0;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(52, 142, 158, 0.66)), to(#2e646e));
+  background: -o-linear-gradient(rgba(52, 142, 158, 0.66) 0%, #2e646e 100%);
+  background: linear-gradient(rgba(52, 142, 158, 0.66) 0%, #2e646e 100%);
+}
+.header .header__navbar {
+  margin: 0 0 151px 0;
+}
+.header .logo img {
+  width: 51px;
+  height: 51px;
+}
+.header .logo .logo__wrapper {
+  margin: 0 0 0 8px;
+}
+.header .logo .logo__wrapper p {
+  margin: 0;
+}
+.header h1 {
+  text-align: center;
+}
+.header span {
+  text-align: center;
+}
+.header .header__about {
+  position: relative;
+}
+.header .header__about .header__about__text {
+  position: absolute;
+  width: 623px;
+  height: 243px;
+}
+
+.services {
+  background: #FFFFFF;
+}
+
+.projects {
+  background: #E2E6E6;
+}
+
+.life {
+  background: #FFFFFF;
+}
+
+.footer {
+  background: #000000;
 }
