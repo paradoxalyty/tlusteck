@@ -1,14 +1,18 @@
 const project_folder = 'dist';
 const source_folder = '#src';
 
+
 const fs = require('fs');
 
 const path = {
+  bootstrap: './node_modules/bootstrap/dist/**/*',
+
   build: {
     html: project_folder + '/',
     css: project_folder + '/css/',
     img: project_folder + '/img/',
     fonts: project_folder + '/fonts/',
+    bootstrap: project_folder + '/vendor/bootstrap/',
   },
 
   src: {
@@ -69,6 +73,13 @@ function fonts() {
   return src(path.src.fonts).pipe(dest(path.build.fonts));
 }
 
+
+
+function bootstrap() {
+  return src(path.bootstrap)
+    .pipe(dest(path.build.bootstrap));
+}
+
 function watchFiles() {
   gulp.watch([path.watch.html], html);
   gulp.watch([path.watch.css], css);
@@ -79,13 +90,14 @@ function clean() {
   return del(path.clean);
 }
 
-const build = gulp.series(clean, gulp.parallel(html, css, img, fonts));
+const build = gulp.series(clean, gulp.parallel(html, css, img, fonts, bootstrap));
 const watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.html = html;
 exports.css = css;
 exports.img = img;
 exports.fonts = fonts;
+exports.bootstrap = bootstrap;
 exports.build = build;
 exports.watch = watch;
 exports.default = watch;
