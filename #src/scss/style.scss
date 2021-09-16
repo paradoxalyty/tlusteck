@@ -1,65 +1,104 @@
-.width__wrapper {
-  max-width: 1024px;
-  margin: 0 auto;
-}
+@import "_variables";
+@import "_fonts";
+@import "_base";
 
 .header {
-  background: top / cover no-repeat url('../img/bg-header@2x.jpg');
+  color: $text-main;
+  background: top / cover no-repeat url("../img/bg-header@2x.jpg");
 
-  .header__wrapper {
-    padding: 54px 0 0 0;
-    background: linear-gradient(rgba(52,142,158,66%) 0%, rgba(46,100,110,1) 100%);
+  &__wrapper {
+    padding: 54px 0 200px 0;
+    background: $bg-linear-gradient;
   }
 
-  .header__navbar {
+  &__navbar {
     margin: 0 0 151px 0;
   }
 
   .logo {
-
     img {
       width: 51px;
       height: 51px;
     }
 
-    .logo__wrapper {
+    &__wrapper {
       margin: 0 0 0 8px;
+    }
 
-      p {
-        margin: 0;
-      }
+    &__heading {
+      margin: 0;
+      color: $text-main;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 24px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    &__subheading {
+      margin: 0;
+      padding: 0 0 0 1px;
+      color: $text-main;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 18px;
+      letter-spacing: 2px;
     }
   }
 
-  h1 {
+  &__nav {
+    flex-basis: 40%;
+
+    .nav__link {
+      color: $text-main;
+      font-size: 20px;
+      font-weight: 400;
+      text-transform: uppercase;
+    }
+  }
+
+  &__heading {
+    margin: 0;
+    // font-family: "Roboto Condensed", sans-serif;
+    // font-size: 103px;
+    // font-weight: 700;
+    // line-height: 103px;
+    font-family: "Titan One";
+    font-family: "Titan";
+    font-size: 64px;
+
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__subheading {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 400;
     text-align: center;
   }
 
-  span {
-    text-align: center;
-  }
-
-  .header__about {
+  &__about {
     position: relative;
+  }
 
-    .header__about__text {
-      position: absolute;
-      width: 623px;
-      height: 243px;
-    }
+  &__about__text {
+    position: absolute;
+    width: 623px;
+    height: 243px;
   }
 }
 
 .services {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .projects {
-  background: #E2E6E6;
+  background: #e2e6e6;
 }
 
 .life {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .footer {

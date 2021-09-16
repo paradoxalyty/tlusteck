@@ -1,55 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
+@font-face {
+  font-family: "Titan";
+  src: url("../fonts/TitanOne-Regular.ttf") format("ttf");
+}
+body {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
 .width__wrapper {
   max-width: 1024px;
   margin: 0 auto;
 }
 
+a {
+  text-decoration: none;
+}
+
+h2 {
+  color: #000000;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
 .header {
+  color: #ffffff;
   background: top/cover no-repeat url("../img/bg-header@2x.jpg");
 }
-.header .header__wrapper {
-  padding: 54px 0 0 0;
+.header__wrapper {
+  padding: 54px 0 200px 0;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(52, 142, 158, 0.66)), to(#2e646e));
   background: -o-linear-gradient(rgba(52, 142, 158, 0.66) 0%, #2e646e 100%);
   background: linear-gradient(rgba(52, 142, 158, 0.66) 0%, #2e646e 100%);
 }
-.header .header__navbar {
+.header__navbar {
   margin: 0 0 151px 0;
 }
 .header .logo img {
   width: 51px;
   height: 51px;
 }
-.header .logo .logo__wrapper {
+.header .logo__wrapper {
   margin: 0 0 0 8px;
 }
-.header .logo .logo__wrapper p {
+.header .logo__heading {
   margin: 0;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
-.header h1 {
+.header .logo__subheading {
+  margin: 0;
+  padding: 0 0 0 1px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 2px;
+}
+.header__nav {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+}
+.header__nav .nav__link {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.header__heading {
+  margin: 0;
+  font-family: "Titan One";
+  font-family: "Titan";
+  font-size: 64px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header__subheading {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 400;
   text-align: center;
 }
-.header span {
-  text-align: center;
-}
-.header .header__about {
+.header__about {
   position: relative;
 }
-.header .header__about .header__about__text {
+.header__about__text {
   position: absolute;
   width: 623px;
   height: 243px;
 }
 
 .services {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .projects {
-  background: #E2E6E6;
+  background: #e2e6e6;
 }
 
 .life {
-  background: #FFFFFF;
+  background: #ffffff;
 }
 
 .footer {

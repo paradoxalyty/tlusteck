@@ -4,60 +4,168 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/style.css" />
     <title>Tlusteck</title>
   </head>
   <body>
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="width__wrapper">
+          <nav class="header__navbar navbar navbar-light">
+            <div class="container-fluid">
+              <a class="logo d-flex align-items-center">
+                <img src="img/logo.svg" alt="logo" />
+                <div
+                  class="logo__wrapper d-flex flex-column justify-content-center"
+                >
+                  <p class="logo__heading">oliver tlusteck</p>
+                  <p class="logo__subheading">sales and more</p>
+                </div>
+              </a>
 
-      <header class="header">
-        <div class="header__wrapper">
-          <div class="width__wrapper">
-            <nav class="header__navbar navbar navbar-light">
-              <div class="container-fluid">
-                <a class="logo d-flex">
-                  <img src="img/logo.svg" alt="logo">
-                  <div class="logo__wrapper">
-                    <p class="logo__header">oliver tlusteck</p>
-                    <p class="logo__text">sales and more</p>
-                  </div>
-                </a>
-                <ul class="nav nav-pills">
-                  <li class="nav-item"> <a href="#services" class="nav-link">projekte</a> </li>
-                  <li class="nav-item"> <a href="#projects" class="nav-link">vita</a> </li>
-                  <li class="nav-item"> <a href="#kontakts" class="nav-link">kontakt</a> </li>
-                </ul>
-              </div>
-            </nav>
+              <ul class="header__nav nav nav-pills justify-content-between">
+                <li class="nav__item nav-item">
+                  <a href="#services" class="nav__link nav-link">projekte</a>
+                </li>
+                <li class="nav__item nav-item">
+                  <a href="#projects" class="nav__link nav-link">vita</a>
+                </li>
+                <li class="nav__item nav-item">
+                  <a href="#contacts" class="nav__link nav-link">kontakt</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
 
-            <h1>tlusteck</h1>
-            <span>sales and more</span>
+          <h1 class="header__heading">tlusteck</h1>
+          <p class="header__subheading">sales and more</p>
 
-            <div class="header__about">
-              <p class="header__about__text">Ich provoziere, kreiere, erschaffe und entwickle Ideen, perfektioniere diese bis zur Innovation und sorge für eine Markt- gerechte und -fähige Umsetzung. Ich fühle mich in den Nischen wohl und sehe immer eine Chance und kenne die Wege zum Ziel. Dazu nutze ich mein gutes Netzwerk zum Handel, zur Industrie, zum Handwerk und zur Forschung.</p>
+          <div class="header__about">
+            <!-- <p class="header__about__text">
+              Ich provoziere, kreiere, erschaffe und entwickle Ideen,
+              perfektioniere diese bis zur Innovation und sorge für eine Markt-
+              gerechte und -fähige Umsetzung. Ich fühle mich in den Nischen wohl
+              und sehe immer eine Chance und kenne die Wege zum Ziel. Dazu nutze
+              ich mein gutes Netzwerk zum Handel, zur Industrie, zum Handwerk
+              und zur Forschung.
+            </p> -->
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="services" class="services">
+        <div class="width__wrapper">
+          <h2 class="services__heading">meine leistungen</h2>
+
+          <ul>
+            <li>Fast model construction</li>
+            <li>Prototyping</li>
+            <li>Markenentwicklung</li>
+            <li>Pitch Deck setting</li>
+            <li>Marketing</li>
+            <li>Networking</li>
+            <li>Consulting</li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="projects" class="projects">
+        <div class="width__wrapper">
+          <h2 class="projects__heading">aktuelle projekte</h2>
+
+          <div class="project__item">
+            <h3>model construction verschlusselemente</h3>
+          </div>
+
+          <div class="project__item">
+            <h3>prototyping retroegg</h3>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="about">
+        <div class="width__wrapper">
+          <h2 class="about__heading">meine vita</h2>
+
+          <img class="about__photo" src="" alt="main photo" />
+
+          <div class="about__info">
+            <div class="info__item">
+              <h5 class="info__item__heading">ausbildung</h5>
+              <span class="info__item__description">
+                Kaufmann im Einzelhandel (KFZ- Technik)
+              </span>
+            </div>
+
+            <div class="info__item">
+              <h5 class="info__item__heading">Fachoberschule</h5>
+              <span class="info__item__description">
+                Fachhochschulreife mit Abschluss (Wirtschaft & Verwaltung) | KMK
+                Fremdsprachenzertifikat Stufe II
+              </span>
+            </div>
+
+            <div class="info__item">
+              <h5 class="info__item__heading">fachschulstudium</h5>
+              <span class="info__item__description">
+                Staatlich geprüfter Betriebswirt/Bachelor professionell,
+                Absatzwirtschaft/Marketing | Weiterbildung Qualitätscoach DEHOGA
+              </span>
+            </div>
+
+            <div class="info__item">
+              <h5 class="info__item__heading">pacaging &amp; automotive</h5>
+              <span class="info__item__description">
+                Vertrieb | Projektmanagement | Marketing | Unternehmensführung |
+                Verkaufsprofi HAUFE Akademie
+              </span>
+            </div>
+
+            <div class="info__item">
+              <h5 class="info__item__heading">tlusteck-salesandmore</h5>
+              <span class="info__item__description">
+                Gründung des Einzelunternehmen „tlusteck-salesandmore“ |
+                Umsetzung mehrerer Projekte im Januar 2021
+              </span>
             </div>
           </div>
         </div>
-      </header>
+      </section>
+    </main>
 
-      <main>
-        <section id="services" class="services">
-          <div class="width__wrapper">
+    <footer class="footer">
+      <div class="width__wrapper">
+        <section id="contacts" class="contacts">
+          <h2 class="contsacts__heading">kontakt aufnehmen</h2>
 
+          <div class="contacts__adress">
+            <span class="contacts__adress__item">
+              tlusteck-salesandmore Einzelunternehmen Oliver Tlusteck
+            </span>
+            <span class="contacts__adress__item">Steingasse 2</span>
+            <span class="contacts__adress__item">99880 Waltershausen</span>
           </div>
-        </section>
-        <section id="projects" class="projects">
-          <div class="width__wrapper">
 
-          </div>
-        </section>
-        <section id="life" class="life">
-          <div class="width__wrapper">
+          <p class="contacts__phone">+49 (0) 1520 30 73 804</p>
+          <p class="contacts__email">tlusteck.salesandmore&commat;gmail.com</p>
 
-          </div>
+          <form class="contacts__form" action="submit" method="get">
+            <input type="text" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="E-Mail" />
+            <button type="button" name="button">kontakt aufnahmen</button>
+          </form>
         </section>
-      </main>
-      <footer id="contacts" class="footer"></footer>
 
+        <section class="copyright">
+          <span class="copyright__item">USt.IdNr.: DE340473686</span>
+          <span class="copyright__item">
+            2021 &copy; Alle Rechte vorbehalten. tlusteck-salesandmore
+          </span>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>
