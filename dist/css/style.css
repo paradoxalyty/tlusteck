@@ -1,8 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
-@font-face {
-  font-family: "Titan";
-  src: url("../fonts/TitanOne-Regular.ttf") format("ttf");
-}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&family=Titan+One&display=swap");
 body {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -74,9 +70,9 @@ h2 {
 }
 .header__heading {
   margin: 0;
-  font-family: "Titan One";
-  font-family: "Titan";
-  font-size: 64px;
+  font-size: 103px;
+  font-weight: 700;
+  line-height: 103px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -96,7 +92,11 @@ h2 {
 }
 
 .services {
+  padding: 241px 0 90px 0;
   background: #ffffff;
+}
+.services .services__heading {
+  width: 221px;
 }
 
 .projects {

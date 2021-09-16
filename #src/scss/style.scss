@@ -1,5 +1,4 @@
 @import "_variables";
-@import "_fonts";
 @import "_base";
 
 .header {
@@ -59,14 +58,9 @@
 
   &__heading {
     margin: 0;
-    // font-family: "Roboto Condensed", sans-serif;
-    // font-size: 103px;
-    // font-weight: 700;
-    // line-height: 103px;
-    font-family: "Titan One";
-    font-family: "Titan";
-    font-size: 64px;
-
+    font-size: 103px;
+    font-weight: 700;
+    line-height: 103px;
     text-align: center;
     text-transform: uppercase;
   }
@@ -90,7 +84,12 @@
 }
 
 .services {
-  background: #ffffff;
+  padding: 241px 0 90px 0;
+  background: $bg-main;
+
+  .services__heading {
+    width: 221px;
+  }
 }
 
 .projects {
