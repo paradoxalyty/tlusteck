@@ -2,7 +2,7 @@
 @import "_base";
 
 .header {
-  color: $text-main;
+  // color: $text-main;
   background: 10px -100px / cover no-repeat url("../img/bg-header@2x.jpg");
 
   &__wrapper {
@@ -60,6 +60,7 @@
 
   &__heading {
     margin: 0;
+    color: $text-main;
     font-size: 103px;
     font-weight: 700;
     line-height: 103px;
@@ -70,17 +71,18 @@
 
   &__subheading {
     margin: 0;
+    color: $text-main;
     font-size: 48px;
     font-weight: 400;
     text-align: center;
     letter-spacing: 6px;
   }
 
-  &__about {
+  &__info {
     position: relative;
   }
 
-  &__about__text {
+  &__info__text {
     position: absolute;
     width: 623px;
     height: 243px;
@@ -88,8 +90,11 @@
 }
 
 .services {
-  padding: 240px 0 90px 0;
   background: $bg-main;
+
+  .width__wrapper {
+    padding: 240px 0 90px 0;
+  }
 
   &__heading {
     width: 221px;
@@ -130,13 +135,12 @@
 }
 
 .projects {
-  padding: 90px 0 104px 0;
   background: $bg-secondary;
 
   .width__wrapper {
-    display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 90px 0 104px 0;
   }
 
   &__heading {
@@ -186,10 +190,179 @@
   }
 }
 
-.life {
-  background: #ffffff;
+.about {
+  background: $bg-main;
+
+  .width__wrapper {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 120px 0 130px 0;
+  }
+
+  &__heading {
+    flex-basis: 100%;
+    margin: 0 0 30px 0;
+  }
+
+  &__photo {
+    width: 202px;
+    height: 202px;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .info__item {
+    margin: 0 0 10px 0;
+    padding: 31px 10px 26px 27px;
+    background: $bg-secondary;
+
+    &__heading {
+      color: $text-theme;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    &__description {
+      max-width: 711px;
+      margin: 0;
+      font-size: 17px;
+      font-weight: 400;
+    }
+  }
 }
 
 .footer {
-  background: #000000;
+  background: $bg-inverce;
+
+  .width__wrapper {
+    padding: 113px 0 71px 0;
+  }
+
+  .contacts {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 60px 0;
+
+    &__heading {
+      flex-basis: 100%;
+      margin: 0 0 50px 0;
+      color: $text-main;
+    }
+
+    &__adress {
+      flex-direction: column;
+      margin: 0 0 30px 0;
+      color: $text-main;
+      font-size: 16px;
+      font-weight: 400;
+
+      &__item {
+        margin: 0 0 4px 0;
+      }
+    }
+
+    &__phone {
+      position: relative;
+      margin: 0;
+      padding: 0 0 0 30px;
+      color: $text-main;
+      font-size: 16px;
+      font-weight: 400;
+      text-decoration: underline;
+
+      &:before {
+        position: absolute;
+        display: block;
+        // top: 3px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: bottom url(../img/icon-phone.svg) no-repeat;
+        content: "";
+      }
+    }
+
+    &__email {
+      position: relative;
+      margin: 0;
+      padding: 0 0 0 30px;
+      color: $text-main;
+      font-size: 16px;
+      font-weight: 400;
+      text-decoration: underline;
+
+      &:before {
+        position: absolute;
+        display: block;
+        // top: 3px;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        background: bottom url(../img/icon-email.svg) no-repeat;
+        content: "";
+      }
+    }
+
+    &__form {
+      flex-direction: column;
+      align-items: flex-end;
+
+      &__input {
+        width: 389px;
+        height: 49px;
+        margin: 0 0 10px 0;
+        padding: 0 18px;
+        color: $text-secondary-light;
+
+        &::placeholder {
+          color: $text-secondary-light;
+          font-size: 16px;
+          font-weight: 400;
+          font-style: italic;
+        }
+      }
+
+      &__button {
+        position: relative;
+        align-self: flex-start;
+        width: 230px;
+        height: 20px;
+        margin: 20px 0 0 0;
+        padding: 0;
+        border: none;
+        color: $bg-main;
+        background: $bg-inverce;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 20px;
+        letter-spacing: 1px;
+        text-align: left;
+        text-transform: uppercase;
+
+        &:before {
+          position: absolute;
+          display: block;
+          // top: 3px;
+          right: 0;
+          width: 32px;
+          height: 20px;
+          background: center url(../img/icon-arrow.svg) no-repeat;
+          content: "";
+        }
+      }
+    }
+  }
+
+  .copyright {
+    padding: 20px 0 0 0;
+    border-top: 1px solid $border-main;
+
+    &__item {
+      color: $text-main;
+      font-size: 16px;
+      font-weight: 400;
+    }
+  }
 }

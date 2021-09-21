@@ -14,7 +14,7 @@
         <div class="width__wrapper">
           <nav class="header__navbar navbar navbar-light">
             <div class="container-fluid">
-              <a class="logo d-flex align-items-center">
+              <a class="logo d-flex align-items-center" href="#">
                 <img src="img/logo.svg" alt="logo" />
                 <div
                   class="logo__wrapper d-flex flex-column justify-content-center"
@@ -41,8 +41,8 @@
           <h1 class="header__heading">tlusteck</h1>
           <p class="header__subheading">sales and more</p>
 
-          <div class="header__about">
-            <!-- <p class="header__about__text">
+          <div class="header__info">
+            <!-- <p class="header__info__text">
               Ich provoziere, kreiere, erschaffe und entwickle Ideen,
               perfektioniere diese bis zur Innovation und sorge für eine Markt-
               gerechte und -fähige Umsetzung. Ich fühle mich in den Nischen wohl
@@ -73,7 +73,7 @@
       </section>
 
       <section id="projects" class="projects">
-        <div class="width__wrapper">
+        <div class="width__wrapper d-flex">
           <h2 class="projects__heading">aktuelle projekte</h2>
 
           <div class="project__item project__item__1">
@@ -104,13 +104,13 @@
       </section>
 
       <section id="about" class="about">
-        <div class="width__wrapper">
+        <div class="width__wrapper d-flex">
           <h2 class="about__heading">meine vita</h2>
 
           <img
             class="about__photo"
             src="../img/photo.jpg"
-            alt="main photo"
+            alt="owners photo"
             style="width: 202px; height: 202px;"
           />
 
@@ -164,7 +164,7 @@
           <h2 class="contacts__heading">kontakt aufnehmen</h2>
 
           <div class="contacts__wrapper">
-            <div class="contacts__adress d-flex flex-column">
+            <div class="contacts__adress d-flex">
               <span class="contacts__adress__item">
                 tlusteck-salesandmore Einzelunternehmen Oliver Tlusteck
               </span>
@@ -178,11 +178,9 @@
             </p>
           </div>
 
-          <form
-            class="contacts__form d-flex flex-column align-items-end"
-            action="submit"
-            method="get"
-          >
+          <!-- class="contacts__form d-flex flex-column align-items-end" -->
+
+          <form class="contacts__form d-flex" action="submit" method="get">
             <input
               class="contacts__form__input"
               type="text"
