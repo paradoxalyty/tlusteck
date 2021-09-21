@@ -57,17 +57,17 @@
 
     <main>
       <section id="services" class="services">
-        <div class="width__wrapper d-flex align-end">
+        <div class="width__wrapper">
           <h2 class="services__heading">meine leistungen</h2>
 
-          <ul>
-            <li>Fast model construction</li>
-            <li>Prototyping</li>
-            <li>Markenentwicklung</li>
-            <li>Pitch Deck setting</li>
-            <li>Marketing</li>
-            <li>Networking</li>
-            <li>Consulting</li>
+          <ul class="services__list">
+            <li class="services__list__item">Fast model construction</li>
+            <li class="services__list__item">Marketing</li>
+            <li class="services__list__item">Prototyping</li>
+            <li class="services__list__item">Networking</li>
+            <li class="services__list__item">Markenentwicklung</li>
+            <li class="services__list__item">Consulting</li>
+            <li class="services__list__item">Pitch Deck setting</li>
           </ul>
         </div>
       </section>
@@ -76,12 +76,29 @@
         <div class="width__wrapper">
           <h2 class="projects__heading">aktuelle projekte</h2>
 
-          <div class="project__item">
-            <h3>model construction verschlusselemente</h3>
+          <div class="project__item project__item__1">
+            <div class="project__item__wrapper">
+              <h3 class="project__item__heading">
+                model construction verschlusselemente
+              </h3>
+
+              <button
+                class="project__item__button"
+                type="button"
+                name="button"
+              ></button>
+            </div>
           </div>
 
-          <div class="project__item">
-            <h3>prototyping retroegg</h3>
+          <div class="project__item project__item__2">
+            <div class="project__item__wrapper">
+              <h3 class="project__item__heading">prototyping retroegg</h3>
+              <button
+                class="project__item__button"
+                type="button"
+                name="button"
+              ></button>
+            </div>
           </div>
         </div>
       </section>
@@ -90,46 +107,51 @@
         <div class="width__wrapper">
           <h2 class="about__heading">meine vita</h2>
 
-          <img class="about__photo" src="" alt="main photo" />
+          <img
+            class="about__photo"
+            src="../img/photo.jpg"
+            alt="main photo"
+            style="width: 202px; height: 202px;"
+          />
 
           <div class="about__info">
             <div class="info__item">
               <h5 class="info__item__heading">ausbildung</h5>
-              <span class="info__item__description">
+              <p class="info__item__description">
                 Kaufmann im Einzelhandel (KFZ- Technik)
-              </span>
+              </p>
             </div>
 
             <div class="info__item">
               <h5 class="info__item__heading">Fachoberschule</h5>
-              <span class="info__item__description">
+              <p class="info__item__description">
                 Fachhochschulreife mit Abschluss (Wirtschaft & Verwaltung) | KMK
                 Fremdsprachenzertifikat Stufe II
-              </span>
+              </p>
             </div>
 
             <div class="info__item">
               <h5 class="info__item__heading">fachschulstudium</h5>
-              <span class="info__item__description">
+              <p class="info__item__description">
                 Staatlich geprüfter Betriebswirt/Bachelor professionell,
                 Absatzwirtschaft/Marketing | Weiterbildung Qualitätscoach DEHOGA
-              </span>
+              </p>
             </div>
 
             <div class="info__item">
               <h5 class="info__item__heading">pacaging &amp; automotive</h5>
-              <span class="info__item__description">
+              <p class="info__item__description">
                 Vertrieb | Projektmanagement | Marketing | Unternehmensführung |
                 Verkaufsprofi HAUFE Akademie
-              </span>
+              </p>
             </div>
 
             <div class="info__item">
               <h5 class="info__item__heading">tlusteck-salesandmore</h5>
-              <span class="info__item__description">
+              <p class="info__item__description">
                 Gründung des Einzelunternehmen „tlusteck-salesandmore“ |
                 Umsetzung mehrerer Projekte im Januar 2021
-              </span>
+              </p>
             </div>
           </div>
         </div>
@@ -138,28 +160,48 @@
 
     <footer class="footer">
       <div class="width__wrapper">
-        <section id="contacts" class="contacts">
-          <h2 class="contsacts__heading">kontakt aufnehmen</h2>
+        <section id="contacts" class="contacts d-flex">
+          <h2 class="contacts__heading">kontakt aufnehmen</h2>
 
-          <div class="contacts__adress">
-            <span class="contacts__adress__item">
-              tlusteck-salesandmore Einzelunternehmen Oliver Tlusteck
-            </span>
-            <span class="contacts__adress__item">Steingasse 2</span>
-            <span class="contacts__adress__item">99880 Waltershausen</span>
+          <div class="contacts__wrapper">
+            <div class="contacts__adress d-flex flex-column">
+              <span class="contacts__adress__item">
+                tlusteck-salesandmore Einzelunternehmen Oliver Tlusteck
+              </span>
+              <span class="contacts__adress__item">Steingasse 2</span>
+              <span class="contacts__adress__item">99880 Waltershausen</span>
+            </div>
+
+            <p class="contacts__phone">+49 (0) 1520 30 73 804</p>
+            <p class="contacts__email">
+              tlusteck.salesandmore&commat;gmail.com
+            </p>
           </div>
 
-          <p class="contacts__phone">+49 (0) 1520 30 73 804</p>
-          <p class="contacts__email">tlusteck.salesandmore&commat;gmail.com</p>
-
-          <form class="contacts__form" action="submit" method="get">
-            <input type="text" name="name" placeholder="Name" />
-            <input type="email" name="email" placeholder="E-Mail" />
-            <button type="button" name="button">kontakt aufnahmen</button>
+          <form
+            class="contacts__form d-flex flex-column align-items-end"
+            action="submit"
+            method="get"
+          >
+            <input
+              class="contacts__form__input"
+              type="text"
+              name="name"
+              placeholder="Name"
+            />
+            <input
+              class="contacts__form__input"
+              type="email"
+              name="email"
+              placeholder="E-Mail"
+            />
+            <button class="contacts__form__button" type="button" name="button">
+              kontakt aufnehmen
+            </button>
           </form>
         </section>
 
-        <section class="copyright">
+        <section class="copyright d-flex justify-content-between">
           <span class="copyright__item">USt.IdNr.: DE340473686</span>
           <span class="copyright__item">
             2021 &copy; Alle Rechte vorbehalten. tlusteck-salesandmore

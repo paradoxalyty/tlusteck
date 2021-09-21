@@ -3,7 +3,7 @@
 
 .header {
   color: $text-main;
-  background: top / cover no-repeat url("../img/bg-header@2x.jpg");
+  background: 10px -100px / cover no-repeat url("../img/bg-header@2x.jpg");
 
   &__wrapper {
     padding: 54px 0 200px 0;
@@ -84,16 +84,16 @@
 }
 
 .services {
-  padding: 241px 0 90px 0;
+  padding: 240px 0 90px 0;
   background: $bg-main;
 
-  .services__heading {
+  &__heading {
     width: 221px;
   }
 }
 
 .projects {
-  background: #e2e6e6;
+  background: $bg-secondary;
 }
 
 .life {

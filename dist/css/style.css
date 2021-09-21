@@ -22,7 +22,7 @@ h2 {
 
 .header {
   color: #ffffff;
-  background: top/cover no-repeat url("../img/bg-header@2x.jpg");
+  background: 10px -100px/cover no-repeat url("../img/bg-header@2x.jpg");
 }
 .header__wrapper {
   padding: 54px 0 200px 0;
@@ -92,10 +92,10 @@ h2 {
 }
 
 .services {
-  padding: 241px 0 90px 0;
+  padding: 240px 0 90px 0;
   background: #ffffff;
 }
-.services .services__heading {
+.services__heading {
   width: 221px;
 }
 
