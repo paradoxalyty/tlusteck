@@ -22,7 +22,9 @@ h2 {
 }
 
 .header {
+  position: relative;
   background: right center/120% no-repeat url("../img/bg-header@2x.jpg");
+  overflow: hidden;
 }
 .header__icon {
   position: absolute;
@@ -119,12 +121,13 @@ h2 {
   text-align: center;
   letter-spacing: 6px;
 }
-.header__info {
+
+.main {
   position: relative;
 }
-.header__info__text {
+.main__info {
   position: absolute;
-  top: 0;
+  top: -154px;
   left: 50%;
   width: 623px;
   padding: 60px 49px 52px 49px;
@@ -134,11 +137,11 @@ h2 {
   font-weight: 400;
   line-height: 26px;
   text-align: center;
-  -webkit-transform: translateX(-50%) translateY(15%);
-      -ms-transform: translateX(-50%) translateY(15%);
-          transform: translateX(-50%) translateY(15%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
-.header__info__text:after {
+.main__info:after {
   position: absolute;
   top: 100%;
   left: 50%;

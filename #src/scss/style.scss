@@ -2,7 +2,9 @@
 @import "_base";
 
 .header {
+  position: relative;
   background: right center / 120% no-repeat url("../img/bg-header@2x.jpg");
+  overflow: hidden;
 
   &__icon {
     position: absolute;
@@ -118,14 +120,14 @@
     text-align: center;
     letter-spacing: 6px;
   }
+}
+
+.main {
+  position: relative;
 
   &__info {
-    position: relative;
-  }
-
-  &__info__text {
     position: absolute;
-    top: 0;
+    top: -154px;
     left: 50%;
     width: 623px;
     padding: 60px 49px 52px 49px;
@@ -135,7 +137,7 @@
     font-weight: 400;
     line-height: 26px;
     text-align: center;
-    transform: translateX(-50%) translateY(15%);
+    transform: translateX(-50%);
 
     &:after {
       position: absolute;
