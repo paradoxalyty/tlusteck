@@ -21,12 +21,6 @@ h2 {
   text-transform: uppercase;
 }
 
-.action-hover:hover {
-  -webkit-transform: scale(1.2) translateX(8%);
-      -ms-transform: scale(1.2) translateX(8%);
-          transform: scale(1.2) translateX(8%);
-}
-
 .header {
   position: relative;
   background: right center/120% no-repeat url("../img/bg-header@2x.jpg");
