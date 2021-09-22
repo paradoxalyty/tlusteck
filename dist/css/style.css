@@ -22,7 +22,36 @@ h2 {
 }
 
 .header {
-  background: 10px -100px/cover no-repeat url("../img/bg-header@2x.jpg");
+  background: right center/120% no-repeat url("../img/bg-header@2x.jpg");
+}
+.header__icon {
+  position: absolute;
+  right: 0;
+  width: 70px;
+  height: 50px;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  -webkit-transform: translateX(19px);
+      -ms-transform: translateX(19px);
+          transform: translateX(19px);
+}
+.header__icon:hover {
+  cursor: pointer;
+}
+.header__icon__facebook {
+  top: 265px;
+  background: left 15px center url("../img/icon-facebook.svg") no-repeat;
+}
+.header__icon__facebook:hover {
+  background-color: #4267b2;
+}
+.header__icon__instagram {
+  top: 320px;
+  background: left 15px center url("../img/icon-instagram.svg") no-repeat;
+}
+.header__icon__instagram:hover {
+  background: left 15px center url("../img/icon-instagram.svg") no-repeat, -o-radial-gradient(30% 107%, circle, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+  background: left 15px center url("../img/icon-instagram.svg") no-repeat, radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
 }
 .header__wrapper {
   padding: 54px 0 200px 0;
@@ -64,9 +93,11 @@ h2 {
       flex-basis: 40%;
 }
 .header__nav .nav__link {
+  padding: 0;
   color: #ffffff;
   font-size: 20px;
   font-weight: 700;
+  text-align: right;
   text-transform: uppercase;
   letter-spacing: 3px;
 }
@@ -93,8 +124,32 @@ h2 {
 }
 .header__info__text {
   position: absolute;
+  top: 0;
+  left: 50%;
   width: 623px;
-  height: 243px;
+  padding: 60px 49px 52px 49px;
+  color: #ffffff;
+  background: #268da0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  -webkit-transform: translateX(-50%) translateY(15%);
+      -ms-transform: translateX(-50%) translateY(15%);
+          transform: translateX(-50%) translateY(15%);
+}
+.header__info__text:after {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border: 30px solid;
+  border-color: #268da0 transparent transparent transparent;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: "";
 }
 
 .services {
