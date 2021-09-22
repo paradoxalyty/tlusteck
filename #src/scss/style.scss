@@ -14,6 +14,7 @@
     border: 2px solid $border-main;
     border-radius: 10px;
     transform: translateX(19px);
+    transition: all 1s;
 
     &:hover {
       cursor: pointer;
@@ -89,6 +90,14 @@
 
   &__nav {
     flex-basis: 40%;
+
+    .nav__item {
+      transition: all 1s;
+    }
+
+    .nav__item:hover {
+      transform: scale(1.2) translateX(8%);
+    }
 
     .nav__link {
       padding: 0;
@@ -233,6 +242,11 @@
       padding: 0 0 36px 53px;
       mix-blend-mode: multiply;
       background: $bg-linear-gradient;
+      cursor: pointer;
+
+      &:hover .project__item__button {
+        transform: scale(1.5) translateX(15%);
+      }
     }
 
     &__heading {
@@ -250,6 +264,7 @@
       height: 16px;
       border: none;
       background: url("../img/icon-arrow.svg");
+      transition: all 3s;
     }
   }
 }
@@ -329,6 +344,7 @@
 
     &__phone {
       position: relative;
+      display: block;
       margin: 0;
       padding: 0 0 0 30px;
       color: $text-main;
@@ -350,6 +366,7 @@
 
     &__email {
       position: relative;
+      display: block;
       margin: 0;
       padding: 0 0 0 30px;
       color: $text-main;
@@ -396,6 +413,7 @@
         margin: 20px 0 0 0;
         padding: 0;
         border: none;
+        border-radius: 50%;
         color: $bg-main;
         background: $bg-inverce;
         font-size: 18px;
@@ -404,11 +422,15 @@
         letter-spacing: 1px;
         text-align: left;
         text-transform: uppercase;
+        transition: all 1s;
+
+        &:hover {
+          transform: scale(1.2) translate(8%, 2%);
+        }
 
         &:before {
           position: absolute;
           display: block;
-          // top: 3px;
           right: 0;
           width: 32px;
           height: 20px;

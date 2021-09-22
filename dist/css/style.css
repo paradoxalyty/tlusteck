@@ -21,6 +21,12 @@ h2 {
   text-transform: uppercase;
 }
 
+.action-hover:hover {
+  -webkit-transform: scale(1.2) translateX(8%);
+      -ms-transform: scale(1.2) translateX(8%);
+          transform: scale(1.2) translateX(8%);
+}
+
 .header {
   position: relative;
   background: right center/120% no-repeat url("../img/bg-header@2x.jpg");
@@ -36,6 +42,9 @@ h2 {
   -webkit-transform: translateX(19px);
       -ms-transform: translateX(19px);
           transform: translateX(19px);
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .header__icon:hover {
   cursor: pointer;
@@ -93,6 +102,16 @@ h2 {
 .header__nav {
   -ms-flex-preferred-size: 40%;
       flex-basis: 40%;
+}
+.header__nav .nav__item {
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.header__nav .nav__item:hover {
+  -webkit-transform: scale(1.2) translateX(8%);
+      -ms-transform: scale(1.2) translateX(8%);
+          transform: scale(1.2) translateX(8%);
 }
 .header__nav .nav__link {
   padding: 0;
@@ -238,6 +257,12 @@ h2 {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(52, 142, 158, 0.66)), to(#2e646e));
   background: -o-linear-gradient(rgba(52, 142, 158, 0.66) 0%, #2e646e 100%);
   background: linear-gradient(rgba(52, 142, 158, 0.66) 0%, #2e646e 100%);
+  cursor: pointer;
+}
+.projects .project__item__wrapper:hover .project__item__button {
+  -webkit-transform: scale(1.5) translateX(15%);
+      -ms-transform: scale(1.5) translateX(15%);
+          transform: scale(1.5) translateX(15%);
 }
 .projects .project__item__heading {
   max-width: 330px;
@@ -253,6 +278,9 @@ h2 {
   height: 16px;
   border: none;
   background: url("../img/icon-arrow.svg");
+  -webkit-transition: all 3s;
+  -o-transition: all 3s;
+  transition: all 3s;
 }
 
 .about {
@@ -331,6 +359,7 @@ h2 {
 }
 .footer .contacts__phone {
   position: relative;
+  display: block;
   margin: 0;
   padding: 0 0 0 30px;
   color: #ffffff;
@@ -349,6 +378,7 @@ h2 {
 }
 .footer .contacts__email {
   position: relative;
+  display: block;
   margin: 0;
   padding: 0 0 0 30px;
   color: #ffffff;
@@ -420,6 +450,7 @@ h2 {
   margin: 20px 0 0 0;
   padding: 0;
   border: none;
+  border-radius: 50%;
   color: #ffffff;
   background: #000000;
   font-size: 18px;
@@ -428,6 +459,14 @@ h2 {
   letter-spacing: 1px;
   text-align: left;
   text-transform: uppercase;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+.footer .contacts__form__button:hover {
+  -webkit-transform: scale(1.2) translate(8%, 2%);
+      -ms-transform: scale(1.2) translate(8%, 2%);
+          transform: scale(1.2) translate(8%, 2%);
 }
 .footer .contacts__form__button:before {
   position: absolute;
