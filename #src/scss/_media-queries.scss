@@ -5,6 +5,24 @@
 }
 
 @media only screen and (max-width: 992px) {
+  .header {
+    &__icon {
+      display: none;
+    }
+
+    &__nav {
+      position: absolute;
+      top: 70px;
+      width: 100%;
+
+      &__list {
+        flex-direction: row;
+        justify-content: space-evenly;
+        border-top: 1px solid $border-main;
+      }
+    }
+  }
+
   .services {
     .width__wrapper {
       flex-wrap: wrap;
@@ -13,7 +31,7 @@
 
     &__heading {
       flex-basis: 100%;
-      margin: 0 0 27px 0;
+      margin: 0 0 50px 0;
       text-align: center;
     }
 
@@ -34,6 +52,7 @@
 
     &__heading {
       text-align: center;
+      margin: 0 0 35px 0;
     }
 
     .project__item {
@@ -59,7 +78,7 @@
 
     .contacts {
       justify-content: center;
-      margin: 0 0 38px 0;
+      margin: 0 0 60px 0;
 
       &__heading {
         text-align: center;
@@ -78,8 +97,15 @@
       }
 
       &__form {
+        flex-basis: 100%;
+        align-items: center;
+
         &__button {
           align-self: center;
+
+          &:hover {
+            transform: scale(1.2);
+          }
         }
       }
     }
@@ -96,6 +122,140 @@
 }
 
 @media only screen and (max-width: 767px) {
+  .width__wrapper {
+    max-width: 470px;
+    max-width: 355px;
+    padding: 0;
+  }
+
+  h2 {
+    line-height: 50px;
+  }
+
+  .header {
+    &__wrapper {
+      padding: 54px 0 300px 0;
+    }
+
+    &__navbar {
+      .container__fluid {
+        padding: 0;
+      }
+    }
+
+    .logo {
+      img {
+        width: 41px;
+        height: 41px;
+      }
+
+      &__heading {
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 19px;
+        letter-spacing: 1px;
+      }
+
+      &__subheading {
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 1px;
+      }
+    }
+
+    &__nav {
+      &__list {
+        .nav__link {
+          font-size: 15px;
+          letter-spacing: 2px;
+        }
+      }
+    }
+
+    &__heading {
+      font-size: 70px;
+      line-height: 70px;
+      letter-spacing: 3px;
+    }
+
+    &__subheading {
+      font-size: 31px;
+      letter-spacing: 3px;
+    }
+  }
+
+  .main {
+    &__info {
+      top: -200px;
+      width: 355px;
+      padding: 30px 23px;
+    }
+  }
+
+  .services {
+    .width__wrapper {
+      padding: 150px 12px 40px 12px;
+    }
+
+    &__list__wrapper {
+      padding: 0 0 0 10px;
+    }
+  }
+
+  .projects {
+    .width__wrapper {
+      padding: 60px 0 104px 0;
+    }
+
+    .project__item__1 {
+      background: center / cover no-repeat url("../img/bg-projects-1.jpg");
+    }
+
+    .project__item__2 {
+      background: center / cover no-repeat url("../img/bg-projects-2.jpg");
+    }
+
+    .project__item {
+      width: 355px;
+      height: 215px;
+
+      &__wrapper {
+        padding: 0 0 30px 43px;
+      }
+
+      &__heading {
+        margin: 0 0 30px 0;
+        font-size: 22px;
+        line-height: 32px;
+      }
+    }
+  }
+
+  .about {
+    .width__wrapper {
+      padding: 73px 0 36px 0;
+    }
+
+    .info__item {
+      padding: 31px 10px 26px 17px;
+
+      &__description {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .footer {
+    .width__wrapper {
+      padding: 88px 0 64px 0;
+    }
+
+    .contacts {
+      &__adress {
+        width: 281px;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: 480px) {
