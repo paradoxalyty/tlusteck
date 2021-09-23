@@ -96,7 +96,7 @@
     }
 
     .nav__item:hover {
-      transform: scale(1.2) translateX(8%);
+      transform: scale(1.2);
     }
 
     .nav__link {
@@ -166,7 +166,7 @@
   background: $bg-main;
 
   .width__wrapper {
-    padding: 240px 0 90px 0;
+    padding: 240px 12px 90px 12px;
   }
 
   &__heading {
@@ -174,14 +174,17 @@
     margin: 36px 160px 0 0;
   }
 
+  &__list__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   &__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     padding: 0;
     margin: 0;
   }
 
-  &__list__item:first-child {
+  &__list__left {
     margin: 0 70px 0 0;
   }
 
@@ -213,7 +216,7 @@
   .width__wrapper {
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 90px 0 104px 0;
+    padding: 90px 12px 104px 12px;
   }
 
   &__heading {
@@ -275,7 +278,7 @@
   .width__wrapper {
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 120px 0 130px 0;
+    padding: 120px 12px 130px 12px;
   }
 
   &__heading {
@@ -286,6 +289,7 @@
   &__photo {
     width: 202px;
     height: 202px;
+    margin: 0 0 20px 0;
     border-radius: 50%;
     overflow: hidden;
   }
@@ -316,7 +320,7 @@
   background: $bg-inverce;
 
   .width__wrapper {
-    padding: 113px 0 71px 0;
+    padding: 113px 12px 71px 12px;
   }
 
   .contacts {
@@ -332,7 +336,7 @@
 
     &__adress {
       flex-direction: column;
-      margin: 0 0 30px 0;
+      margin: 0 0 34px 0;
       color: $text-main;
       font-size: 16px;
       font-weight: 400;
@@ -342,7 +346,7 @@
       }
     }
 
-    &__phone {
+    &__link {
       position: relative;
       display: block;
       margin: 0;
@@ -355,35 +359,19 @@
       &:before {
         position: absolute;
         display: block;
-        // top: 3px;
         left: 0;
         width: 20px;
         height: 20px;
-        background: bottom url(../img/icon-phone.svg) no-repeat;
         content: "";
       }
     }
 
-    &__email {
-      position: relative;
-      display: block;
-      margin: 0;
-      padding: 0 0 0 30px;
-      color: $text-main;
-      font-size: 16px;
-      font-weight: 400;
-      text-decoration: underline;
+    &__phone:before {
+      background: bottom url(../img/icon-phone.svg) no-repeat;
+    }
 
-      &:before {
-        position: absolute;
-        display: block;
-        // top: 3px;
-        left: 0;
-        width: 20px;
-        height: 20px;
-        background: bottom url(../img/icon-email.svg) no-repeat;
-        content: "";
-      }
+    &__email:before {
+      background: bottom url(../img/icon-email.svg) no-repeat;
     }
 
     &__form {
@@ -413,7 +401,6 @@
         margin: 20px 0 0 0;
         padding: 0;
         border: none;
-        border-radius: 50%;
         color: $bg-main;
         background: $bg-inverce;
         font-size: 18px;
@@ -442,6 +429,7 @@
   }
 
   .copyright {
+    justify-content: space-between;
     padding: 20px 0 0 0;
     border-top: 1px solid $border-main;
 
@@ -452,3 +440,5 @@
     }
   }
 }
+
+@import "_media-queries";
